@@ -4,7 +4,7 @@ import { Carousel, Card } from "react-bootstrap";
 function Main() {
   return (
     <main>
-      <section style={{ margin: "28px" }}>
+      <section style={{ margin: "50px 20px 50px 70px" }}>
         <h1 style={{ color: "#51ae32b7" }}>Terra Real Estate</h1>
         <h3>Ventas de quintas y propiedades</h3>
         <p>Somos una empresa de bienes y raíces.</p>
@@ -26,14 +26,14 @@ function Main() {
             <Card style={{ width: "18rem", maxHeight: "400px" }}>
               <Card.Img variant="top" src="https://via.placeholder.com/150" />
               <Card.Body>
-                <Card.Title>Propiedad 1</Card.Title>
+                <Card.Title>Propiedad 2</Card.Title>
                 <Card.Text>Descripción de la propiedad 1.</Card.Text>
               </Card.Body>
             </Card>
             <Card style={{ width: "18rem", maxHeight: "400px" }}>
               <Card.Img variant="top" src="https://via.placeholder.com/150" />
               <Card.Body>
-                <Card.Title>Propiedad 1</Card.Title>
+                <Card.Title>Propiedad 3</Card.Title>
                 <Card.Text>Descripción de la propiedad 1.</Card.Text>
               </Card.Body>
             </Card>
@@ -44,21 +44,21 @@ function Main() {
             <Card style={{ width: "18rem", maxHeight: "400px" }}>
               <Card.Img variant="top" src="https://via.placeholder.com/150" />
               <Card.Body>
-                <Card.Title>Propiedad 1</Card.Title>
+                <Card.Title>Propiedad 4</Card.Title>
                 <Card.Text>Descripción de la propiedad 1.</Card.Text>
               </Card.Body>
             </Card>
             <Card style={{ width: "18rem", maxHeight: "400px" }}>
               <Card.Img variant="top" src="https://via.placeholder.com/150" />
               <Card.Body>
-                <Card.Title>Propiedad 1</Card.Title>
+                <Card.Title>Propiedad 5</Card.Title>
                 <Card.Text>Descripción de la propiedad 1.</Card.Text>
               </Card.Body>
             </Card>
             <Card style={{ width: "18rem", maxHeight: "400px" }}>
               <Card.Img variant="top" src="https://via.placeholder.com/150" />
               <Card.Body>
-                <Card.Title>Propiedad 1</Card.Title>
+                <Card.Title>Propiedad 6</Card.Title>
                 <Card.Text>Descripción de la propiedad 1.</Card.Text>
               </Card.Body>
             </Card>

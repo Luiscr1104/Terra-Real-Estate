@@ -1,7 +1,14 @@
 import React from "react";
 import Image from "next/image";
+import { useState } from "react";
+import Link from "next/link";
 
 const Header = () => {
+  const [activeLink, setActiveLink] = useState("Inicio");
+
+  const handleLinkClick = (event) => {
+    setActiveLink(event.target.innerText);
+  };
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
@@ -27,39 +34,58 @@ const Header = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#" style={{color:'#51AE32'}}>
-                Inicio
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#" style={{color:'#51AE32'}}>
-                Proyectos
-              </a>
-            </li>
-            <li className="nav-item">
-            <a className="nav-link" href="#" style={{color:'#51AE32'}}>
-                Nosotros
-              </a>
-            </li>
-            <li className="nav-item">
-            <a className="nav-link" href="#" style={{color:'#51AE32'}}>
-                Construcción
-              </a>
-            </li>
-            <li className="nav-item">
-              <button
-                className="btn nav-link"
-                style={{
-                  backgroundColor: "#EDE547",
-                  color: "#51AE32",
-                  fontWeight: 800,
-                  fontSize: 20,
-                }}
+              <Link
+                className={`nav-link ${
+                  activeLink === "Inicio" ? "active" : ""
+                }`}
+                href="/"
+                onClick={handleLinkClick}
+                style={{ fontFamily: "Poppins", fontSize: "20px", fontWeight: '900' }}
               >
-                <a href="./contact.html" style={{ color: "#51AE32" }}>
-                  Contáctanos
-                </a>
-              </button>
+                Inicio
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                className={`nav-link ${
+                  activeLink === "Proyectos" ? "active" : ""
+                }`
+              }
+                href="/"
+                onClick={handleLinkClick}
+                style={{ fontFamily: "Poppins", fontSize: "20px", fontWeight: '800'}}
+              >
+                Proyectos
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                className={`nav-link ${
+                  activeLink === "Nosotros" ? "active" : ""
+                }`}
+                href="/"
+                onClick={handleLinkClick}
+                style={{ fontFamily: "Poppins", fontSize: "20px", fontWeight: '1500'}}
+              >
+                Nosotros
+              </Link  >
+            </li>
+            <li className="nav-item">
+              <Link
+                className={`nav-link ${
+                  activeLink === "Construcción" ? "active" : ""
+                }`}
+                href="/"
+                onClick={handleLinkClick}
+                style={{ fontFamily: "Poppins", fontSize: "20px", fontWeight: '800'}}
+              >
+                Construcción
+              </Link>
+            </li>
+            <li className="nav-item">
+              <a className="btn nav-link yellow-bg" href="/contacto">
+                Contáctanos
+              </a>
             </li>
           </ul>
         </div>
